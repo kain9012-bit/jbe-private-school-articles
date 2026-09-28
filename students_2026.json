@@ -1,0 +1,734 @@
+{
+ "1": [
+  {
+   "school": "완산중학교",
+   "matched": "완산중학교",
+   "students": 429
+  },
+  {
+   "school": "완산여자고등학교",
+   "matched": "완산여자고등학교",
+   "students": 167
+  }
+ ],
+ "2": [
+  {
+   "school": "전주근영중학교",
+   "matched": "전주근영중학교",
+   "students": 589
+  },
+  {
+   "school": "전주근영여자고등학교",
+   "matched": "전주근영여자고등학교",
+   "students": 748
+  }
+ ],
+ "3": [
+  {
+   "school": "전주성심여자중학교",
+   "matched": "전주성심여자중학교",
+   "students": 261
+  },
+  {
+   "school": "전주해성중학교",
+   "matched": "전주해성중학교",
+   "students": 540
+  },
+  {
+   "school": "전주성심여자고등학교",
+   "matched": "전주성심여자고등학교",
+   "students": 773
+  },
+  {
+   "school": "전주해성고등학교",
+   "matched": "전주해성고등학교",
+   "students": 581
+  }
+ ],
+ "4": [
+  {
+   "school": "전북중학교",
+   "matched": "전북중학교",
+   "students": 624
+  },
+  {
+   "school": "우석고등학교",
+   "matched": "우석고등학교",
+   "students": 783
+  },
+  {
+   "school": "전북여자고등학교",
+   "matched": "전북여자고등학교",
+   "students": 704
+  }
+ ],
+ "5": [
+  {
+   "school": "군산영광중학교",
+   "matched": "군산영광중학교",
+   "students": 364
+  },
+  {
+   "school": "군산영광여자고등학교",
+   "matched": "군산영광여자고등학교",
+   "students": 655
+  }
+ ],
+ "6": [
+  {
+   "school": "남성중학교",
+   "matched": "남성중학교",
+   "students": 489
+  },
+  {
+   "school": "남성고등학교",
+   "matched": "남성고등학교",
+   "students": 715
+  },
+  {
+   "school": "이리남성여자중학교",
+   "matched": "이리남성여자중학교",
+   "students": 481
+  },
+  {
+   "school": "이리남성여자고등학교",
+   "matched": "이리남성여자고등학교",
+   "students": 575
+  }
+ ],
+ "7": [
+  {
+   "school": "함열여자중학교",
+   "matched": "함열여자중학교",
+   "students": 87
+  },
+  {
+   "school": "함열여자고등학교",
+   "matched": "함열여자고등학교",
+   "students": 312
+  }
+ ],
+ "8": [
+  {
+   "school": "원광중학교",
+   "matched": "원광중학교",
+   "students": 449
+  },
+  {
+   "school": "원광여자중학교",
+   "matched": "원광여자중학교",
+   "students": 454
+  },
+  {
+   "school": "원광고등학교",
+   "matched": "원광고등학교",
+   "students": 696
+  },
+  {
+   "school": "원광여자고등학교",
+   "matched": "원광여자고등학교",
+   "students": 543
+  },
+  {
+   "school": "원광보건고등학교",
+   "matched": "원광보건고등학교",
+   "students": 303
+  }
+ ],
+ "9": [
+  {
+   "school": "이리중학교",
+   "matched": "이리중학교",
+   "students": 399
+  },
+  {
+   "school": "전북제일고등학교",
+   "matched": "전북제일고등학교",
+   "students": 569
+  }
+ ],
+ "10": [
+  {
+   "school": "익산중학교",
+   "matched": "익산중학교",
+   "students": 116
+  },
+  {
+   "school": "익산고등학교",
+   "matched": "익산고등학교",
+   "students": 375
+  }
+ ],
+ "11": [
+  {
+   "school": "진경여자중학교",
+   "matched": "진경여자중학교",
+   "students": 29
+  },
+  {
+   "school": "진경여자고등학교",
+   "matched": "진경여자고등학교",
+   "students": 271
+  }
+ ],
+ "12": [
+  {
+   "school": "이일여자중학교",
+   "matched": "이일여자중학교",
+   "students": 367
+  },
+  {
+   "school": "이일여자고등학교",
+   "matched": "이일여자고등학교",
+   "students": 551
+  }
+ ],
+ "13": [
+  {
+   "school": "황등중학교",
+   "matched": "황등중학교",
+   "students": 60
+  },
+  {
+   "school": "성일고등학교",
+   "matched": "성일고등학교",
+   "students": 165
+  }
+ ],
+ "14": [
+  {
+   "school": "학산중학교",
+   "matched": "학산중학교",
+   "students": 353
+  },
+  {
+   "school": "글로벌학산고등학교",
+   "matched": "글로벌학산고등학교",
+   "students": 276
+  }
+ ],
+ "15": [
+  {
+   "school": "배영중학교",
+   "matched": "배영중학교",
+   "students": 344
+  },
+  {
+   "school": "배영고등학교",
+   "matched": "배영고등학교",
+   "students": 291
+  }
+ ],
+ "16": [
+  {
+   "school": "신태인중학교",
+   "matched": "신태인중학교",
+   "students": 69
+  },
+  {
+   "school": "신태인고등학교",
+   "matched": "신태인고등학교",
+   "students": 97
+  }
+ ],
+ "17": [
+  {
+   "school": "왕신여자중학교",
+   "matched": "왕신여자중학교",
+   "students": 37
+  },
+  {
+   "school": "왕신여자고등학교",
+   "matched": "왕신여자고등학교",
+   "students": 22
+  }
+ ],
+ "18": [
+  {
+   "school": "태인중학교",
+   "matched": "태인중학교",
+   "students": 111
+  },
+  {
+   "school": "태인고등학교",
+   "matched": "태인고등학교",
+   "students": 122
+  }
+ ],
+ "19": [
+  {
+   "school": "호남중학교",
+   "matched": "호남중학교",
+   "students": 318
+  },
+  {
+   "school": "호남고등학교",
+   "matched": "호남고등학교",
+   "students": 355
+  }
+ ],
+ "20": [
+  {
+   "school": "성원고등학교",
+   "matched": "성원고등학교",
+   "students": 289
+  },
+  {
+   "school": "남원제일고등학교",
+   "matched": "남원제일고등학교",
+   "students": 199
+  }
+ ],
+ "21": [
+  {
+   "school": "덕암중학교",
+   "matched": "덕암중학교",
+   "students": 223
+  },
+  {
+   "school": "덕암고등학교",
+   "matched": "덕암고등학교",
+   "students": 418
+  },
+  {
+   "school": "덕암정보고등학교",
+   "matched": "덕암정보고등학교",
+   "students": 435
+  }
+ ],
+ "22": [
+  {
+   "school": "만경중학교",
+   "matched": "만경중학교",
+   "students": 35
+  },
+  {
+   "school": "만경고등학교",
+   "matched": "만경고등학교",
+   "students": 118
+  }
+ ],
+ "23": [
+  {
+   "school": "만경여자중학교",
+   "matched": "만경여자중학교",
+   "students": 18
+  },
+  {
+   "school": "만경여자고등학교",
+   "matched": "만경여자고등학교",
+   "students": 48
+  }
+ ],
+ "24": [
+  {
+   "school": "지평선중학교",
+   "matched": "지평선중학교",
+   "students": 118
+  },
+  {
+   "school": "지평선고등학교",
+   "matched": "지평선고등학교",
+   "students": 66
+  }
+ ],
+ "25": [
+  {
+   "school": "전주예술고등학교",
+   "matched": "전주예술고등학교",
+   "students": 255
+  },
+  {
+   "school": "전주예술중학교",
+   "matched": "전주예술중학교",
+   "students": 95
+  }
+ ],
+ "26": [
+  {
+   "school": "순창북중학교",
+   "matched": "순창북중학교",
+   "students": 120
+  },
+  {
+   "school": "순창고등학교",
+   "matched": "순창고등학교",
+   "students": 309
+  }
+ ],
+ "27": [
+  {
+   "school": "영선중학교",
+   "matched": "영선중학교",
+   "students": 246
+  },
+  {
+   "school": "전북인공지능고등학교",
+   "matched": "전북인공지능고등학교",
+   "students": 81
+  }
+ ],
+ "28": [
+  {
+   "school": "고창북중학교",
+   "matched": "고창북중학교",
+   "students": 183
+  },
+  {
+   "school": "고창북고등학교",
+   "matched": "고창북고등학교",
+   "students": 293
+  }
+ ],
+ "29": [
+  {
+   "school": "자유중학교",
+   "matched": "자유중학교",
+   "students": 326
+  },
+  {
+   "school": "자유고등학교",
+   "matched": "자유고등학교",
+   "students": 302
+  }
+ ],
+ "30": [
+  {
+   "school": "낭주중학교",
+   "matched": "낭주중학교",
+   "students": 334
+  },
+  {
+   "school": "부안여자고등학교",
+   "matched": "부안여자고등학교",
+   "students": 220
+  }
+ ],
+ "31": [
+  {
+   "school": "백산중학교",
+   "matched": "백산중학교",
+   "students": 130
+  },
+  {
+   "school": "백산고등학교",
+   "matched": "백산고등학교",
+   "students": 184
+  }
+ ],
+ "32": [
+  {
+   "school": "꿈을담는유치원",
+   "matched": "꿈을담는유치원(휴원)",
+   "students": 0
+  }
+ ],
+ "33": [
+  {
+   "school": "전주덕진중학교",
+   "matched": "전주덕진중학교",
+   "students": 437
+  }
+ ],
+ "34": [
+  {
+   "school": "전주효문중학교",
+   "matched": "전주효문중학교",
+   "students": 459
+  }
+ ],
+ "35": [
+  {
+   "school": "호남제일고등학교",
+   "matched": "호남제일고등학교",
+   "students": 746
+  }
+ ],
+ "36": [
+  {
+   "school": "동암고등학교",
+   "matched": "동암고등학교",
+   "students": 719
+  }
+ ],
+ "37": [
+  {
+   "school": "상산고등학교",
+   "matched": "상산고등학교",
+   "students": 1004
+  }
+ ],
+ "38": [
+  {
+   "school": "유일여자고등학교",
+   "matched": "유일여자고등학교",
+   "students": 705
+  }
+ ],
+ "39": [
+  {
+   "school": "완산고등학교",
+   "matched": "완산고등학교",
+   "students": 556
+  }
+ ],
+ "40": [
+  {
+   "school": "전주한일고등학교",
+   "matched": "전주한일고등학교",
+   "students": 766
+  }
+ ],
+ "41": [
+  {
+   "school": "전주중앙여자고등학교",
+   "matched": "전주중앙여자고등학교",
+   "students": 738
+  }
+ ],
+ "42": [
+  {
+   "school": "전일고등학교",
+   "matched": "전일고등학교",
+   "students": 729
+  }
+ ],
+ "43": [
+  {
+   "school": "군산대성중학교",
+   "matched": "군산대성중학교",
+   "students": 44
+  }
+ ],
+ "44": [
+  {
+   "school": "군산중앙여자고등학교",
+   "matched": "군산중앙여자고등학교",
+   "students": 817
+  }
+ ],
+ "45": [
+  {
+   "school": "이평중학교",
+   "matched": "이평중학교",
+   "students": 64
+  }
+ ],
+ "46": [
+  {
+   "school": "서영여자고등학교",
+   "matched": "서영여자고등학교",
+   "students": 300
+  }
+ ],
+ "47": [
+  {
+   "school": "정주고등학교",
+   "matched": "정주고등학교",
+   "students": 344
+  }
+ ],
+ "48": [
+  {
+   "school": "인상고등학교",
+   "matched": "인상고등학교",
+   "students": 97
+  }
+ ],
+ "49": [
+  {
+   "school": "용북중학교",
+   "matched": "용북중학교",
+   "students": 194
+  }
+ ],
+ "50": [
+  {
+   "school": "남원국악예술고등학교",
+   "matched": "남원국악예술고등학교",
+   "students": 243
+  }
+ ],
+ "51": [
+  {
+   "school": "남원서진고등학교",
+   "matched": "남원서진고등학교",
+   "students": 234
+  }
+ ],
+ "52": [
+  {
+   "school": "금성중학교",
+   "matched": "금성중학교",
+   "students": 249
+  }
+ ],
+ "53": [
+  {
+   "school": "김제서고등학교",
+   "matched": "김제서고등학교",
+   "students": 36
+  }
+ ],
+ "54": [
+  {
+   "school": "삼우중학교",
+   "matched": "삼우중학교",
+   "students": 226
+  }
+ ],
+ "55": [
+  {
+   "school": "화산중학교",
+   "matched": "화산중학교",
+   "students": 287
+  }
+ ],
+ "56": [
+  {
+   "school": "완주고등학교",
+   "matched": "완주고등학교",
+   "students": 442
+  }
+ ],
+ "57": [
+  {
+   "school": "한국게임과학고등학교",
+   "matched": "한국게임과학고등학교",
+   "students": 175
+  }
+ ],
+ "58": [
+  {
+   "school": "세인고등학교",
+   "matched": "세인고등학교",
+   "students": 161
+  }
+ ],
+ "59": [
+  {
+   "school": "한국한방고등학교",
+   "matched": "한국한방고등학교",
+   "students": 117
+  }
+ ],
+ "60": [
+  {
+   "school": "푸른꿈고등학교",
+   "matched": "푸른꿈고등학교",
+   "students": 67
+  }
+ ],
+ "61": [
+  {
+   "school": "백화고등학교",
+   "matched": "백화고등학교",
+   "students": 72
+  }
+ ],
+ "62": [
+  {
+   "school": "한국마사고등학교",
+   "matched": "한국마사고등학교",
+   "students": 40
+  }
+ ],
+ "63": [
+  {
+   "school": "강호항공고등학교",
+   "matched": "강호항공고등학교",
+   "students": 451
+  }
+ ],
+ "64": [
+  {
+   "school": "삼남중학교",
+   "matched": "삼남중학교",
+   "students": 209
+  }
+ ],
+ "65": [
+  {
+   "school": "변산서중학교",
+   "matched": "변산서중학교",
+   "students": 50
+  }
+ ],
+ "66": [
+  {
+   "school": "고창남중학교",
+   "matched": "고창남중학교",
+   "students": 16
+  }
+ ],
+ "67": [
+  {
+   "school": "전주신흥중학교",
+   "matched": "전주신흥중학교",
+   "students": 409
+  },
+  {
+   "school": "전주기전중학교",
+   "matched": "전주기전중학교",
+   "students": 737
+  },
+  {
+   "school": "전주신흥고등학교",
+   "matched": "전주신흥고등학교",
+   "students": 777
+  },
+  {
+   "school": "전주기전여자고등학교",
+   "matched": "전주기전여자고등학교",
+   "students": 637
+  }
+ ],
+ "68": [
+  {
+   "school": "전주영생고등학교",
+   "matched": "전주영생고등학교",
+   "students": 742
+  },
+  {
+   "school": "전주대학교 사범대학 부설고등학교",
+   "matched": "전주대사범대학부설고등학교",
+   "students": 613
+  }
+ ],
+ "69": [
+  {
+   "school": "군산제일고등학교",
+   "matched": "군산제일고등학교",
+   "students": 748
+  },
+  {
+   "school": "군산제일중학교",
+   "matched": "군산제일중학교",
+   "students": 601
+  }
+ ],
+ "70": [
+  {
+   "school": "군산중앙중학교",
+   "matched": "군산중앙중학교",
+   "students": 423
+  },
+  {
+   "school": "군산중앙고등학교",
+   "matched": "군산중앙고등학교",
+   "students": 596
+  }
+ ],
+ "71": [
+  {
+   "school": "동국대학교사범대학부속금산중학교",
+   "matched": "동국대학교사범대부속금산중학교",
+   "students": 90
+  },
+  {
+   "school": "동국대학교사범대학부속금산고등학교",
+   "matched": "동국대사범대학부속금산고등학교",
+   "students": 55
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+# 작업 찌꺼기
+_to_delete/
+__pycache__/
+*.pyc
+
+# 화면 빌드 산출물
+web/node_modules/
+web/dist/
+
+# 게시판 zip 원본(30MB 안팎, collect.py 로 다시 받음)
+raw/*.bin
+raw/*.txt
+raw/*.html

@@ -1,0 +1,570 @@
+[
+ {
+  "no": 1,
+  "name": "완산학원",
+  "ext": ".pdf",
+  "pages": 23,
+  "chars": 0,
+  "articles": 0
+ },
+ {
+  "no": 2,
+  "name": "춘봉학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 17690,
+  "articles": 236
+ },
+ {
+  "no": 3,
+  "name": "해성학원",
+  "ext": ".pdf",
+  "pages": 24,
+  "chars": 0,
+  "articles": 0
+ },
+ {
+  "no": 4,
+  "name": "전북학원",
+  "ext": ".pdf",
+  "pages": 24,
+  "chars": 13683,
+  "articles": 172
+ },
+ {
+  "no": 5,
+  "name": "영광학원",
+  "ext": ".pdf",
+  "pages": 41,
+  "chars": 32017,
+  "articles": 412
+ },
+ {
+  "no": 6,
+  "name": "남성학원",
+  "ext": ".pdf",
+  "pages": 25,
+  "chars": 0,
+  "articles": 0
+ },
+ {
+  "no": 7,
+  "name": "삼성학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 17165,
+  "articles": 285
+ },
+ {
+  "no": 8,
+  "name": "원창학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 15160,
+  "articles": 189
+ },
+ {
+  "no": 9,
+  "name": "이리학원",
+  "ext": ".pdf",
+  "pages": 30,
+  "chars": 0,
+  "articles": 0
+ },
+ {
+  "no": 10,
+  "name": "익성학원",
+  "ext": ".pdf",
+  "pages": 31,
+  "chars": 17944,
+  "articles": 0
+ },
+ {
+  "no": 11,
+  "name": "진경학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 17275,
+  "articles": 183
+ },
+ {
+  "no": 12,
+  "name": "초헌학원",
+  "ext": ".pdf",
+  "pages": 20,
+  "chars": 16007,
+  "articles": 167
+ },
+ {
+  "no": 13,
+  "name": "황등기독학원",
+  "ext": ".pdf",
+  "pages": 28,
+  "chars": 18535,
+  "articles": 199
+ },
+ {
+  "no": 14,
+  "name": "묵제학원",
+  "ext": ".pdf",
+  "pages": 30,
+  "chars": 17147,
+  "articles": 178
+ },
+ {
+  "no": 15,
+  "name": "정읍배영학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 16531,
+  "articles": 175
+ },
+ {
+  "no": 16,
+  "name": "신태인학원",
+  "ext": ".pdf",
+  "pages": 22,
+  "chars": 18002,
+  "articles": 187
+ },
+ {
+  "no": 17,
+  "name": "왕신학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 17116,
+  "articles": 202
+ },
+ {
+  "no": 18,
+  "name": "태인학원",
+  "ext": ".pdf",
+  "pages": 27,
+  "chars": 17443,
+  "articles": 164
+ },
+ {
+  "no": 19,
+  "name": "호남학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 16271,
+  "articles": 170
+ },
+ {
+  "no": 20,
+  "name": "성원학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 16867,
+  "articles": 194
+ },
+ {
+  "no": 21,
+  "name": "덕암학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 17598,
+  "articles": 276
+ },
+ {
+  "no": 22,
+  "name": "만경학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 20159,
+  "articles": 213
+ },
+ {
+  "no": 23,
+  "name": "옥산학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 18194,
+  "articles": 193
+ },
+ {
+  "no": 24,
+  "name": "원진학원",
+  "ext": ".pdf",
+  "pages": 29,
+  "chars": 18738,
+  "articles": 182
+ },
+ {
+  "no": 25,
+  "name": "성안나교육재단",
+  "ext": ".pdf",
+  "pages": 30,
+  "chars": 20976,
+  "articles": 199
+ },
+ {
+  "no": 26,
+  "name": "옥천학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 17937,
+  "articles": 218
+ },
+ {
+  "no": 27,
+  "name": "무송학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 16429,
+  "articles": 157
+ },
+ {
+  "no": 28,
+  "name": "중앙학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 16575,
+  "articles": 192
+ },
+ {
+  "no": 29,
+  "name": "학산학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 17560,
+  "articles": 170
+ },
+ {
+  "no": 30,
+  "name": "낭주학회",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 19456,
+  "articles": 265
+ },
+ {
+  "no": 31,
+  "name": "백산학원",
+  "ext": ".pdf",
+  "pages": 28,
+  "chars": 18151,
+  "articles": 286
+ },
+ {
+  "no": 32,
+  "name": "덕암기독학원",
+  "ext": ".pdf",
+  "pages": 24,
+  "chars": 8274,
+  "articles": 117
+ },
+ {
+  "no": 33,
+  "name": "덕송학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 15348,
+  "articles": 169
+ },
+ {
+  "no": 34,
+  "name": "삼전학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 16347,
+  "articles": 176
+ },
+ {
+  "no": 35,
+  "name": "경초학원",
+  "ext": ".pdf",
+  "pages": 25,
+  "chars": 16482,
+  "articles": 197
+ },
+ {
+  "no": 36,
+  "name": "동암학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 17459,
+  "articles": 207
+ },
+ {
+  "no": 37,
+  "name": "상산학원",
+  "ext": ".pdf",
+  "pages": 32,
+  "chars": 19012,
+  "articles": 214
+ },
+ {
+  "no": 38,
+  "name": "시사학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 15026,
+  "articles": 154
+ },
+ {
+  "no": 39,
+  "name": "신유학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 25864,
+  "articles": 240
+ },
+ {
+  "no": 40,
+  "name": "안흥학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 15818,
+  "articles": 164
+ },
+ {
+  "no": 41,
+  "name": "인애학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 18224,
+  "articles": 200
+ },
+ {
+  "no": 42,
+  "name": "천만학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 26461,
+  "articles": 347
+ },
+ {
+  "no": 43,
+  "name": "의화학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 16009,
+  "articles": 172
+ },
+ {
+  "no": 44,
+  "name": "덕실학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 17845,
+  "articles": 192
+ },
+ {
+  "no": 45,
+  "name": "이평학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 14067,
+  "articles": 145
+ },
+ {
+  "no": 46,
+  "name": "우송학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 16949,
+  "articles": 170
+ },
+ {
+  "no": 47,
+  "name": "의암학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 18485,
+  "articles": 197
+ },
+ {
+  "no": 48,
+  "name": "인상학원",
+  "ext": ".pdf",
+  "pages": 26,
+  "chars": 12546,
+  "articles": 164
+ },
+ {
+  "no": 49,
+  "name": "춘강학원",
+  "ext": ".pdf",
+  "pages": 25,
+  "chars": 0,
+  "articles": 0
+ },
+ {
+  "no": 50,
+  "name": "로뎀나무학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 14875,
+  "articles": 155
+ },
+ {
+  "no": 51,
+  "name": "서암학원",
+  "ext": ".pdf",
+  "pages": 32,
+  "chars": 16240,
+  "articles": 163
+ },
+ {
+  "no": 52,
+  "name": "금성학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 17980,
+  "articles": 194
+ },
+ {
+  "no": 53,
+  "name": "기정학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 18043,
+  "articles": 222
+ },
+ {
+  "no": 54,
+  "name": "우곡학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 18042,
+  "articles": 294
+ },
+ {
+  "no": 55,
+  "name": "화봉학원",
+  "ext": ".pdf",
+  "pages": 26,
+  "chars": 16502,
+  "articles": 159
+ },
+ {
+  "no": 56,
+  "name": "부림학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 17291,
+  "articles": 287
+ },
+ {
+  "no": 57,
+  "name": "성순학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 18255,
+  "articles": 173
+ },
+ {
+  "no": 58,
+  "name": "DiA세인학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 16926,
+  "articles": 169
+ },
+ {
+  "no": 59,
+  "name": "자연학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 14559,
+  "articles": 163
+ },
+ {
+  "no": 60,
+  "name": "푸른꿈학원",
+  "ext": ".pdf",
+  "pages": 24,
+  "chars": 0,
+  "articles": 0
+ },
+ {
+  "no": 61,
+  "name": "백화학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 17303,
+  "articles": 181
+ },
+ {
+  "no": 62,
+  "name": "월곡학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 18088,
+  "articles": 166
+ },
+ {
+  "no": 63,
+  "name": "강호학원",
+  "ext": ".pdf",
+  "pages": 34,
+  "chars": 17484,
+  "articles": 264
+ },
+ {
+  "no": 64,
+  "name": "부안명륜학원",
+  "ext": ".pdf",
+  "pages": 20,
+  "chars": 12815,
+  "articles": 209
+ },
+ {
+  "no": 65,
+  "name": "서연학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 17639,
+  "articles": 160
+ },
+ {
+  "no": 66,
+  "name": "송파학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 61682,
+  "articles": 753
+ },
+ {
+  "no": 67,
+  "name": "호남기독학원",
+  "ext": ".pdf",
+  "pages": 38,
+  "chars": 23560,
+  "articles": 191
+ },
+ {
+  "no": 68,
+  "name": "신동아학원",
+  "ext": ".hwpx",
+  "pages": null,
+  "chars": 22907,
+  "articles": 202
+ },
+ {
+  "no": 69,
+  "name": "경암학원",
+  "ext": ".pdf",
+  "pages": 26,
+  "chars": 24110,
+  "articles": 330
+ },
+ {
+  "no": 70,
+  "name": "광동학원",
+  "ext": ".pdf",
+  "pages": 44,
+  "chars": 23706,
+  "articles": 257
+ },
+ {
+  "no": 71,
+  "name": "동국대학교",
+  "ext": ".pdf",
+  "pages": 43,
+  "chars": 25377,
+  "articles": 272
+ }
+]
