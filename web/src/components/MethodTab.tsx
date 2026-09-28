@@ -39,7 +39,7 @@ export const MethodTab: React.FC<{ total: number; ocr: number }> = ({ total, ocr
     <section>
       <SectionTitle>점검 절차</SectionTitle>
       <ol className="mt-3 space-y-1.5 list-decimal pl-5 text-slate-600">
-        <li>게시판 zip 내려받기 → hwp·hwpx·pdf 본문 추출, 스캔본은 한글 OCR</li>
+        <li>게시판 zip 내려받기 → hwp·hwpx·pdf 본문 추출. 스캔본 {ocr}곳은 한글 OCR 후 판정에 쓴 숫자를 원본 이미지로 재확인 (카드의 정관 원문 인용은 OCR 글자 그대로)</li>
         <li>항목표(checklist)에 따라 정관 전문을 현행 법령 원문과 대조 — AI가 1차 판정</li>
         <li>모든 지적에 정관 원문·법령 원문 인용 첨부, 인용이 원문과 글자 그대로 맞는지 스크립트로 검증</li>
         <li>'저촉' 판정 전건을 다른 검토자(AI)가 원문으로 재검토 → 하향 조정 결과를 카드에 표시</li>
@@ -64,10 +64,8 @@ export const MethodTab: React.FC<{ total: number; ocr: number }> = ({ total, ocr
       <SectionTitle>한계</SectionTitle>
       <ul className="mt-3 space-y-1.5 list-disc pl-5 text-slate-600">
         <li>AI 1차 판정 — 법률 자문이 아님. 시정 요구 전 담당자 확인 필요</li>
-        <li>스캔본 {ocr}곳은 OCR 본문 — 숫자·조문번호 오독 가능. 판독이 애매한 곳은 '확인필요'로 분류</li>
         <li>교원징계위원회 위원 수는 교육행정자료(2026.4.1. 기준) 학생 수로 판정. 200명 이상·미만 학교를 함께 둔 법인은 기준 적용이 갈려 '확인필요'</li>
         <li>정관 본문만 봄. 별표(정원표)·부칙 경과규정의 세부 대조는 제외</li>
-        <li>송파학원(전남)·호남기독학원(광주)은 법인 사무소가 다른 시·도라 관할청 명칭 항목 판정 생략 — 전북 소재 학교(고창남중, 전주신흥중·고, 전주기전중·기전여고) 때문에 공개 대상</li>
       </ul>
     </section>
   </div>
