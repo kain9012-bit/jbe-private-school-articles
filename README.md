@@ -26,7 +26,7 @@
 ## 해마다 갱신
 
 1. `python scripts/collect.py 2027` — 새 공개본 받기
-2. `python scripts/extract.py 2027` — 본문 추출. `LOW` 로 찍힌 스캔본은 `bash scripts/ocr_kordoc.sh 2027 <번호들>` (kordoc OCR). 판정 숫자는 원본 이미지로 재확인
+2. `python scripts/extract.py 2027` — 본문 추출. `LOW`(스캔본)·`SCRAMBLED`(글자 순서 뒤섞인 pdf)는 `bash scripts/ocr_kordoc.sh 2027 <번호들>` (kordoc OCR). 판정 숫자는 원본 이미지로 재확인
    (kordoc 설치: `npm i -g kordoc@^4 sharp onnxruntime-node`)
 3. `python scripts/diff.py 2026 2027` — '변경'으로 잡힌 법인만 재점검 대상
 4. 세션에서 Claude 에게 재점검 요청 → `REVIEW_PROMPT.md` 대로 `review/2027/` 작성,

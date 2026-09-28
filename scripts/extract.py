@@ -61,10 +61,11 @@ def main(year):
             t = ''; print('ERR', fn, e)
         open(os.path.join(dst, f'{no:02d}_{name}.txt'), 'w', encoding='utf-8').write(t)
         hangul = len(re.findall(r'[가-힣]', t))
-        rep.append(dict(no=no, name=name, ext=ext, pages=pages, chars=hangul, articles=len(re.findall(r'제\s*\d+\s*조', t))))
+        rep.append(dict(no=no, name=name, ext=ext, pages=pages, chars=hangul, articles=len(re.findall(r'제\s*\d+\s*조\s*(?:의\s*\d+)?\s*[(（]', t))))
     json.dump(rep, open(f'text/{year}_report.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     for r in rep:
-        if r['chars'] < 3000: print('LOW', r)
+        if r['chars'] < 3000: print('LOW', r)          # 스캔본 → scripts/ocr_kordoc.sh
+        elif r['ext'] == '.pdf' and r['articles'] < 30: print('SCRAMBLED', r)  # 글자 순서 뒤섞임 → kordoc 으로 다시 추출
     print(year, 'done', len(rep))
 
 if __name__ == '__main__':
