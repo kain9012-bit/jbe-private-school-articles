@@ -73,12 +73,12 @@ export const CorpCard: React.FC<{ corp: Corp; findings: Finding[]; year: string;
   const c = countBy(findings);
   const b = corp.board;
   return (
-    <article className="jbe-card bg-white rounded-lg border border-slate-200 overflow-hidden">
+    <article className={`jbe-card bg-white rounded-lg border border-slate-200 overflow-hidden ${open ? 'is-open' : ''}`}>
       <button
         type="button"
         aria-expanded={open}
         onClick={() => setOpen(!open)}
-        className="w-full text-left flex flex-wrap items-center gap-x-3 gap-y-1.5 px-4 py-3 hover:bg-slate-50"
+        className={`w-full text-left flex flex-wrap items-center gap-x-3 gap-y-1.5 px-4 py-3 ${open ? 'bg-blue-50' : 'hover:bg-slate-50'}`}
       >
         <span className="flex-1 min-w-[14rem]">
           <strong className="text-base text-slate-900">{corp.name}</strong>
