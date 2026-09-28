@@ -11,11 +11,21 @@ export const countBy = (f: Finding[]) => {
 };
 
 /** 지적 한 줄 — 정관 원문과 법령 원문을 나란히 둬서 판정을 그대로 믿지 않고 확인할 수 있게 한다. */
-const Row: React.FC<{ f: Finding }> = ({ f }) => (
+const Row: React.FC<{ f: Finding; onOpen?: () => void }> = ({ f, onOpen }) => (
   <div className="grid gap-x-4 gap-y-1.5 px-4 py-3 border-t border-slate-100 sm:grid-cols-[9rem_1fr]">
     <div className="flex sm:flex-col items-start gap-1.5">
       <Badge tone={LEVEL_TONE[f.level]}>{f.level}</Badge>
       <span className="text-sm font-bold text-slate-700">{f.article}</span>
+      {onOpen && (
+        <button
+          type="button"
+          onClick={onOpen}
+          className="inline-flex items-center gap-1 text-xs font-bold text-blue-700 hover:underline underline-offset-2"
+        >
+          <FileText className="w-3 h-3" aria-hidden="true" />
+          원문에서 보기
+        </button>
+      )}
       <span className="text-xs text-slate-400">
         {f.item} {ITEM_LABEL[f.item] ?? ''}
       </span>
@@ -56,11 +66,12 @@ const Row: React.FC<{ f: Finding }> = ({ f }) => (
   </div>
 );
 
-export const CorpCard: React.FC<{ corp: Corp; findings: Finding[]; year: string; open?: boolean }> = ({
+export const CorpCard: React.FC<{ corp: Corp; findings: Finding[]; year: string; open?: boolean; onOpen?: (no: number, fi: number) => void }> = ({
   corp,
   findings,
   year,
   open: initial = false,
+  onOpen,
 }) => {
   const [open, setOpen] = useState(initial);
   const c = countBy(findings);
@@ -110,7 +121,7 @@ export const CorpCard: React.FC<{ corp: Corp; findings: Finding[]; year: string;
           {findings.length === 0 ? (
             <p className="px-4 py-6 text-sm text-slate-500">조건에 맞는 지적 없음</p>
           ) : (
-            findings.map((f, i) => <Row key={i} f={f} />)
+            findings.map((f, i) => <Row key={i} f={f} onOpen={onOpen ? () => onOpen(corp.no, corp.findings.indexOf(f)) : undefined} />)
           )}
           {corp.notes && (
             <details className="px-4 py-3 border-t border-slate-100 text-sm text-slate-500">

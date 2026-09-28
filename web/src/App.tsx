@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { CorpCard, countBy } from './components/CorpCard';
 import { ItemTab } from './components/ItemTab';
 import { MethodTab } from './components/MethodTab';
+import { TextTab } from './components/TextTab';
 import { Chip, EmptyState, SectionTitle, Stat } from './components/Ui';
 import { AS_OF, GROUPS, ITEM_LABEL, LEVELS, type Data, type Level, type Tab } from './types';
 import raw from './data/data.json';
@@ -22,6 +23,14 @@ export default function App() {
   const [sort, setSort] = useState<Sort>('name');
   const [q, setQ] = useState('');
   const [top, setTop] = useState(false);
+  // 정관 원문 탭 — 보고 있는 법인과, 지적 카드에서 넘어왔을 때 이동할 지적 번호
+  const [textNo, setTextNo] = useState(() => [...CORPS].sort((a, b) => a.name.localeCompare(b.name, 'ko'))[0].no);
+  const [focus, setFocus] = useState<number | null>(null);
+  const openText = (no: number, fi: number) => {
+    setTextNo(no);
+    setFocus(fi);
+    setTab('text');
+  };
 
   useEffect(() => {
     const onScroll = () => setTop(window.scrollY > 500);
@@ -103,7 +112,9 @@ export default function App() {
       </div>
 
       <main id="container" className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        {tab === 'method' ? (
+        {tab === 'text' ? (
+          <TextTab corps={CORPS} no={textNo} focus={focus} onPick={(n) => { setTextNo(n); setFocus(null); }} />
+        ) : tab === 'method' ? (
           <MethodTab total={CORPS.length} ocr={CORPS.filter((c) => c.ocr).length} />
         ) : tab === 'item' ? (
           <ItemTab corps={CORPS} onPick={pickItem} />
@@ -184,7 +195,7 @@ export default function App() {
             ) : (
               <div className="mt-2.5 space-y-2.5">
                 {shown.map((x) => (
-                  <CorpCard key={`${x.corp.no}|${level}|${group}|${item}`} corp={x.corp} findings={x.findings} year={DATA.year} open={shown.length <= 3} />
+                  <CorpCard key={`${x.corp.no}|${level}|${group}|${item}`} corp={x.corp} findings={x.findings} year={DATA.year} open={shown.length <= 3} onOpen={openText} />
                 ))}
               </div>
             )}

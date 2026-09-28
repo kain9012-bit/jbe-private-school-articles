@@ -2,7 +2,7 @@ import React from 'react';
 import { Info, Landmark } from 'lucide-react';
 import { AS_OF, TAB_LABEL, type Tab } from '../types';
 
-const TABS: Tab[] = ['corp', 'item', 'method'];
+const TABS: Tab[] = ['corp', 'text', 'item', 'method'];
 
 export const Header: React.FC<{ tab: Tab; onTab: (t: Tab) => void }> = ({ tab, onTab }) => (
   <header className="sticky top-0 z-30 bg-white jbe-noprint">

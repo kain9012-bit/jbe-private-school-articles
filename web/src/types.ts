@@ -102,10 +102,11 @@ export const AS_OF = {
     'https://www.jbe.go.kr/board/list.jbe?boardId=BBS_0000088&menuCd=DOM_000000106004002000&contentsSid=344',
 };
 
-export type Tab = 'corp' | 'item' | 'method';
+export type Tab = 'corp' | 'text' | 'item' | 'method';
 
 export const TAB_LABEL: Record<Tab, string> = {
   corp: '법인별 점검 결과',
+  text: '정관 원문',
   item: '항목별 · 조문별',
   method: '점검 방법과 한계',
 };

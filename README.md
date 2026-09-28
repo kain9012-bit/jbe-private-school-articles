@@ -26,13 +26,14 @@
 ## 해마다 갱신
 
 1. `python scripts/collect.py 2027` — 새 공개본 받기
-2. `python scripts/extract.py 2027` — 본문 추출. `LOW`(스캔본)·`SCRAMBLED`(글자 순서 뒤섞인 pdf)는 `bash scripts/ocr_kordoc.sh 2027 <번호들>` (kordoc OCR). 판정 숫자는 원본 이미지로 재확인
+2. `python scripts/extract.py 2027` — 본문 추출. `LOW` 로 찍힌 스캔본은 `bash scripts/ocr_kordoc.sh 2027 <번호들>` (kordoc OCR). 판정 숫자는 원본 이미지로 재확인
    (kordoc 설치: `npm i -g kordoc@^4 sharp onnxruntime-node`)
 3. `python scripts/diff.py 2026 2027` — '변경'으로 잡힌 법인만 재점검 대상
 4. 세션에서 Claude 에게 재점검 요청 → `REVIEW_PROMPT.md` 대로 `review/2027/` 작성,
    바뀌지 않은 법인은 `review/2026/` 결과 복사
 5. `python scripts/verify.py review/2027` — 인용문이 원문과 맞는지 검사. 통과 전 발행 금지
-6. `python scripts/build_data.py 2027 2026` → `web/` 빌드·배포
+6. `python scripts/build_data.py 2027 2026` · `python scripts/build_articles.py 2027` → `web/` 빌드·배포
+   (build_articles 는 '정관 원문' 탭용 조문별 본문과 지적 위치 표시 파일을 `web/public/articles/` 에 만듦)
 
 ## 법령이 개정됐을 때
 
