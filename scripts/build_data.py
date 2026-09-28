@@ -32,7 +32,8 @@ for p in sorted(glob.glob(os.path.join(ROOT, 'review', YEAR, '*.json'))):
     findings = sorted(r['findings'], key=lambda f: (LEVEL_ORDER.get(f['level'], 9), f['item'][0], int(f['item'][1:])))
     corps.append({
         'no': r['no'], 'name': r['name'], 'lastAmended': r.get('last_amended'),
-        'schools': r.get('schools', []), 'univ': bool(r.get('has_university')),
+        # 화면에는 전북 소재 학교만 — 교육행정자료(students)에 있는 학교 = 전북 학교
+        'schools': [x['school'] for x in r.get('students', [])] or r.get('schools', []), 'univ': bool(r.get('has_university')),
         'board': r.get('board', {}), 'ocr': r['no'] in SCANNED,
         'change': change_state(r['no']),
         'changedArticles': (d.get('changed', []) + d.get('added', []))[:40],

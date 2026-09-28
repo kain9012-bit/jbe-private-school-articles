@@ -73,10 +73,8 @@ export const CorpCard: React.FC<{ corp: Corp; findings: Finding[]; year: string;
         onClick={() => setOpen(!open)}
         className={`w-full text-left flex flex-wrap items-center gap-x-3 gap-y-1.5 px-4 py-3 ${open ? 'bg-blue-50' : 'hover:bg-slate-50'}`}
       >
-        <span className="flex-1 min-w-[14rem]">
-          <strong className="text-base text-slate-900">{corp.name}</strong>
-          <span className="block text-xs text-slate-500 truncate">{corp.schools.join(' · ')}</span>
-        </span>
+        <strong className="w-full sm:w-36 shrink-0 text-base text-slate-900">{corp.name}</strong>
+        <span className="flex-1 min-w-[12rem] text-sm text-slate-500">{corp.schools.join(' · ')}</span>
         <span className="flex flex-wrap items-center gap-1.5">
           {LEVELS.filter((l) => c[l] > 0).map((l) => (
             <Badge key={l} tone={LEVEL_TONE[l]}>
