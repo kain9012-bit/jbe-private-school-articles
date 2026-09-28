@@ -84,7 +84,6 @@ export const CorpCard: React.FC<{ corp: Corp; findings: Finding[]; year: string;
             </Badge>
           ))}
           {corp.ocr && <Badge tone="blue">스캔본</Badge>}
-          {corp.univ && <Badge tone="blue">대학</Badge>}
         </span>
         <ChevronDown
           className={`w-5 h-5 text-slate-400 transition-transform ${open ? 'rotate-180' : ''}`}

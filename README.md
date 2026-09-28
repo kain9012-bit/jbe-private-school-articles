@@ -6,14 +6,14 @@
 - 대상: [교육청 누리집 학교법인정관](https://www.jbe.go.kr/board/list.jbe?boardId=BBS_0000088&menuCd=DOM_000000106004002000&contentsSid=344) 2026.3.1. 기준 71개 법인
 - 기준 법령: 사립학교법(2026.5.12. 시행) · 시행령(2025.12.23.) — legalize-kr 미러, 2026.9.23. 커밋
 - 판정 구분: 저촉 / 미반영 / 누락 / 확인필요 / 정비 (`checklist.md`)
-- 1차 결과(2026.9.28.): 지적 890건 — 저촉 있는 법인 50 · 미반영 67 · 누락 19
+- 1차 결과(2026.9.29.): 지적 937건 — 저촉 있는 법인 59 · 미반영 67 · 누락 19
 
 ## 폴더
 
 | 경로 | 내용 |
 |---|---|
 | `raw/<연도>/` | 게시판 zip 을 푼 원본(hwp·hwpx·pdf) |
-| `text/<연도>/` | 본문 텍스트. 스캔본 6곳은 OCR 본문(판정 숫자는 원본 이미지로 확인 완료) |
+| `text/<연도>/` | 본문 텍스트. 스캔본 6곳은 kordoc OCR 본문(판정 숫자는 원본 이미지로 확인) |
 | `text/diff_<전년>_<연도>.json` | 전년 대비 조문 단위 개정 여부 |
 | `law/` | 현행 법령 원문(md) · `_현행법령목록.txt` |
 | `checklist.md` | 점검 항목표(A~J, 약 60개)와 판정 기준 |
@@ -26,8 +26,8 @@
 ## 해마다 갱신
 
 1. `python scripts/collect.py 2027` — 새 공개본 받기
-2. `python scripts/extract.py 2027` — 본문 추출. `LOW` 로 찍힌 스캔본은 `scripts/ocr.py 2027`
-   (tesseract 한국어 데이터 `tools/kor.traineddata` 필요)
+2. `python scripts/extract.py 2027` — 본문 추출. `LOW` 로 찍힌 스캔본은 `bash scripts/ocr_kordoc.sh 2027 <번호들>` (kordoc OCR). 판정 숫자는 원본 이미지로 재확인
+   (kordoc 설치: `npm i -g kordoc@^4 sharp onnxruntime-node`)
 3. `python scripts/diff.py 2026 2027` — '변경'으로 잡힌 법인만 재점검 대상
 4. 세션에서 Claude 에게 재점검 요청 → `REVIEW_PROMPT.md` 대로 `review/2027/` 작성,
    바뀌지 않은 법인은 `review/2026/` 결과 복사

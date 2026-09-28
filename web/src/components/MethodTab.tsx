@@ -19,8 +19,8 @@ export const MethodTab: React.FC<{ total: number; ocr: number }> = ({ total, ocr
         </Li>
         <Li t="법령">{AS_OF.law} — 국가법령정보센터 원문 미러(legalize-kr)</Li>
         <Li t="학생 수">교육행정자료(2026.4.1. 기준) 학교별 학생인원수 — 교원징계위원회 위원 수 판정</Li>
-        <Li t="참고 법령">사학기관 재무·회계 규칙, 초·중등교육법, 고등교육법(대학 설치 법인만), 사립학교교원 징계규칙</Li>
-        <Li t="점검 항목">필수 기재사항·임원·이사회·정관 변경·재산·교원·징계·사무직원·표기·대학 10개 묶음, 약 60개 항목</Li>
+        <Li t="참고 법령">사학기관 재무·회계 규칙, 초·중등교육법, 고등교육법(대학 관련 조항), 사립학교교원 징계규칙</Li>
+        <Li t="점검 항목">필수 기재사항·임원·이사회·정관 변경·재산·교원·징계·사무직원·표기·대학 관련 10개 묶음, 약 60개 항목</Li>
       </ul>
     </section>
 
@@ -39,7 +39,7 @@ export const MethodTab: React.FC<{ total: number; ocr: number }> = ({ total, ocr
     <section>
       <SectionTitle>점검 절차</SectionTitle>
       <ol className="mt-3 space-y-1.5 list-decimal pl-5 text-slate-600">
-        <li>게시판 zip 내려받기 → hwp·hwpx·pdf 본문 추출. 스캔본 {ocr}곳은 한글 OCR 후 판정에 쓴 숫자를 원본 이미지로 재확인 (카드의 정관 원문 인용은 OCR 글자 그대로)</li>
+        <li>게시판 zip 내려받기 → hwp·hwpx·pdf 본문 추출. 스캔본 {ocr}곳은 kordoc(PP-OCRv5 한국어) OCR 후 판정에 쓴 숫자·문구를 원본 이미지로 재확인 (카드의 정관 원문 인용은 OCR 글자 그대로)</li>
         <li>항목표(checklist)에 따라 정관 전문을 현행 법령 원문과 대조 — AI가 1차 판정</li>
         <li>모든 지적에 정관 원문·법령 원문 인용 첨부, 인용이 원문과 글자 그대로 맞는지 스크립트로 검증</li>
         <li>'저촉' 판정 전건을 다른 검토자(AI)가 원문으로 재검토 → 하향 조정 결과를 카드에 표시</li>
