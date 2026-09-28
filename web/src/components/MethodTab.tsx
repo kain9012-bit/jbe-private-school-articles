@@ -63,9 +63,10 @@ export const MethodTab: React.FC<{ total: number; ocr: number }> = ({ total, ocr
     <section>
       <SectionTitle>한계</SectionTitle>
       <ul className="mt-3 space-y-1.5 list-disc pl-5 text-slate-600">
-        <li>AI 1차 판정 — 법률 자문이 아님. 시정 요구 전 담당자 확인 필요</li>
-        <li>교원징계위원회 위원 수는 교육행정자료(2026.4.1. 기준) 학생 수로 판정. 200명 이상·미만 학교를 함께 둔 법인은 기준 적용이 갈려 '확인필요'</li>
-        <li>정관 본문만 봄. 별표(정원표)·부칙 경과규정의 세부 대조는 제외</li>
+        <li>AI 1차 판정 — 법률 자문 아님. 시정 요구 전 담당자 확인 필요</li>
+        <li>정관 본문만 대조 — 별표(정원표)·부칙 경과규정 제외</li>
+        <li>법률·시행령·교육부령까지만 대조 — 교육부 고시·지침, 교육청 지침 제외</li>
+        <li>교원징계위원회 위원 수 — 200명 이상·미만 학교를 함께 둔 법인 4곳은 적용 기준 불명확, '확인필요'로 둠</li>
       </ul>
     </section>
   </div>

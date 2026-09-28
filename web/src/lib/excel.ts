@@ -33,7 +33,6 @@ const summaryRow = (c: Corp) => {
     c.schools.join(', '),
     c.students.map((s) => `${s.matched} ${s.students}명`).join(', '),
     c.lastAmended ?? '',
-    c.change ?? '',
     ...LEVELS.map(n),
     c.findings.length,
     c.ocr ? '스캔본(OCR)' : '',
@@ -70,9 +69,9 @@ export const downloadAll = (corps: Corp[], year: string) => {
     [
       {
         name: '법인 요약',
-        head: ['법인명', '설치학교', '학생 수(2026.4.1.)', '최종 개정', '전년 대비', ...LEVELS, '합계', '비고'],
+        head: ['법인명', '설치학교', '학생 수(2026.4.1.)', '최종 개정', ...LEVELS, '합계', '비고'],
         rows: sorted.map(summaryRow),
-        width: [14, 36, 44, 16, 10, 6, 6, 6, 8, 6, 6, 12],
+        width: [14, 36, 44, 16, 6, 6, 6, 8, 6, 6, 12],
       },
       { name: '지적 목록', head: HEAD, rows: sorted.flatMap(rowsOf), width: WIDTH },
     ],

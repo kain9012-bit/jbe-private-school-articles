@@ -4,13 +4,6 @@ import { downloadCorp } from '../lib/excel';
 import { Badge } from './Ui';
 import { ITEM_LABEL, LEVELS, LEVEL_TONE, type Corp, type Finding, type Level } from '../types';
 
-const CHANGE_TONE: Record<string, 'green' | 'slate' | 'amber' | 'blue'> = {
-  개정: 'amber',
-  동일: 'slate',
-  '형식만 변경': 'slate',
-  '대조 불가': 'blue',
-};
-
 export const countBy = (f: Finding[]) => {
   const c = Object.fromEntries(LEVELS.map((l) => [l, 0])) as Record<Level, number>;
   f.forEach((x) => (c[x.level] += 1));
@@ -90,7 +83,6 @@ export const CorpCard: React.FC<{ corp: Corp; findings: Finding[]; year: string;
               {l} {c[l]}
             </Badge>
           ))}
-          {corp.change && <Badge tone={CHANGE_TONE[corp.change]}>전년 대비 {corp.change}</Badge>}
           {corp.ocr && <Badge tone="blue">스캔본</Badge>}
           {corp.univ && <Badge tone="blue">대학</Badge>}
         </span>

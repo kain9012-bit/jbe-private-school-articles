@@ -19,7 +19,6 @@ export default function App() {
   const [level, setLevel] = useState<Level | ''>('');
   const [group, setGroup] = useState('');
   const [item, setItem] = useState('');
-  const [changedOnly, setChangedOnly] = useState(false);
   const [sort, setSort] = useState<Sort>('name');
   const [q, setQ] = useState('');
   const [top, setTop] = useState(false);
@@ -35,7 +34,6 @@ export default function App() {
     () =>
       CORPS.filter(
         (c) =>
-          (!changedOnly || c.change === '개정') &&
           (!q.trim() || `${c.name}${c.schools.join('')}`.includes(q.trim())),
       ).map((c) => ({
         corp: c,
@@ -43,7 +41,7 @@ export default function App() {
           (f) => (!group || f.item[0] === group) && (!item || f.item === item),
         ),
       })),
-    [changedOnly, q, group, item],
+    [q, group, item],
   );
 
   const shown = scoped
@@ -60,7 +58,6 @@ export default function App() {
   const corpsWith = (l: Level) => CORPS.filter((c) => c.findings.some((f) => f.level === l)).length;
   const chipCount = (l?: Level) =>
     scoped.filter((x) => x.findings.some((f) => !l || f.level === l)).length;
-  const revised = CORPS.filter((c) => c.change === '개정').length;
 
   const pickItem = (it: string) => {
     setItem(it);
@@ -95,7 +92,7 @@ export default function App() {
           </p>
           {tab === 'corp' && (
             <div className="mt-5 grid gap-3 grid-cols-2 lg:grid-cols-5">
-              <Stat icon={<Building2 className="w-3.5 h-3.5" aria-hidden="true" />} label="점검 법인" value={CORPS.length} desc={`${DATA.prev} 대비 개정 ${revised}곳`} />
+              <Stat icon={<Building2 className="w-3.5 h-3.5" aria-hidden="true" />} label="점검 법인" value={CORPS.length} desc={`정관 ${AS_OF.articles} 기준 공개본`} />
               <Stat icon={<AlertTriangle className="w-3.5 h-3.5" aria-hidden="true" />} label="저촉 있는 법인" value={corpsWith('저촉')} desc="법령과 다른 기준" tone="red" />
               <Stat icon={<FilePen className="w-3.5 h-3.5" aria-hidden="true" />} label="미반영 있는 법인" value={corpsWith('미반영')} desc="개정 법령 미반영" tone="amber" />
               <Stat label="누락 있는 법인" value={corpsWith('누락')} desc="정관 위임사항 부재" />
@@ -144,10 +141,6 @@ export default function App() {
                   <X className="w-3.5 h-3.5" aria-label="항목 필터 해제" />
                 </button>
               )}
-              <label className="inline-flex items-center gap-1.5 text-sm text-slate-600">
-                <input type="checkbox" checked={changedOnly} onChange={(e) => setChangedOnly(e.target.checked)} />
-                올해 개정된 법인만
-              </label>
               <select
                 value={sort}
                 onChange={(e) => setSort(e.target.value as Sort)}
