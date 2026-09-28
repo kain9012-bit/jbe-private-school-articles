@@ -11,7 +11,7 @@ import raw from './data/data.json';
 const DATA = raw as Data;
 const CORPS = DATA.corps;
 
-type Sort = 'severity' | 'no';
+type Sort = 'severity' | 'name';
 
 export default function App() {
   const [tab, setTab] = useState<Tab>('corp');
@@ -49,10 +49,10 @@ export default function App() {
     .map((x) => ({ ...x, findings: x.findings.filter((f) => !level || f.level === level) }))
     .filter((x) => x.findings.length > 0 || (!level && !group && !item))
     .sort((a, b) => {
-      if (sort === 'no') return a.corp.no - b.corp.no;
+      if (sort === 'name') return a.corp.name.localeCompare(b.corp.name, 'ko');
       const ca = countBy(a.findings), cb = countBy(b.findings);
       return (
-        cb.저촉 - ca.저촉 || cb.미반영 - ca.미반영 || cb.누락 - ca.누락 || a.corp.no - b.corp.no
+        cb.저촉 - ca.저촉 || cb.미반영 - ca.미반영 || cb.누락 - ca.누락 || a.corp.name.localeCompare(b.corp.name, 'ko')
       );
     });
 
@@ -154,7 +154,7 @@ export default function App() {
                 className="rounded-lg border border-slate-300 px-2.5 py-1.5 text-sm text-slate-700 bg-white hover:border-blue-600"
               >
                 <option value="severity">저촉 많은 순</option>
-                <option value="no">게시 번호순</option>
+                <option value="name">법인명 가나다순</option>
               </select>
               <span className="flex-1" />
               <label className="flex items-center gap-1.5 flex-1 min-w-[12rem] max-w-sm rounded-lg border border-slate-300 px-2.5 py-1.5 bg-white focus-within:border-blue-600">

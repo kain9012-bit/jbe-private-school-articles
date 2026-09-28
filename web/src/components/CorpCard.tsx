@@ -78,7 +78,6 @@ export const CorpCard: React.FC<{ corp: Corp; findings: Finding[]; open?: boolea
         onClick={() => setOpen(!open)}
         className="w-full text-left flex flex-wrap items-center gap-x-3 gap-y-1.5 px-4 py-3 hover:bg-slate-50"
       >
-        <span className="w-8 text-sm text-slate-400 tabular-nums">{corp.no}</span>
         <span className="flex-1 min-w-[14rem]">
           <strong className="text-base text-slate-900">{corp.name}</strong>
           <span className="block text-xs text-slate-500 truncate">{corp.schools.join(' · ')}</span>
@@ -105,7 +104,7 @@ export const CorpCard: React.FC<{ corp: Corp; findings: Finding[]; open?: boolea
             <div><dt className="inline text-slate-500">이사·감사 </dt><dd className="inline font-bold">{b.directors ?? '—'}명 · {b.auditors ?? '—'}명 (개방이사 {b.open_directors ?? '—'})</dd></div>
             <div><dt className="inline text-slate-500">임기 </dt><dd className="inline font-bold">이사 {b.director_term ?? '—'} · 감사 {b.auditor_term ?? '—'}</dd></div>
             <div><dt className="inline text-slate-500">학교장 임기 </dt><dd className="inline font-bold">{b.principal_term ?? '—'}</dd></div>
-            <div className="sm:col-span-2 lg:col-span-4"><dt className="inline text-slate-500">학생 수 </dt><dd className="inline font-bold">{corp.students.length ? corp.students.map((x) => `${x.matched} ${x.students.toLocaleString('ko-KR')}명`).join(' · ') : '—'}</dd><span className="text-slate-500"> · 징계위원 {b.discipline_committee ?? '—'}</span></div>
+            <div className="sm:col-span-2 lg:col-span-4"><dt className="inline text-slate-500">학생 수(2026.4.1.) </dt><dd className="inline font-bold">{corp.students.length ? corp.students.map((x) => `${x.matched} ${x.students.toLocaleString('ko-KR')}명`).join(' · ') : '—'}</dd><span className="text-slate-500"> · 징계위원 {b.discipline_committee ?? '—'}</span></div>
           </dl>
           {findings.length === 0 ? (
             <p className="px-4 py-6 text-sm text-slate-500">조건에 맞는 지적 없음</p>

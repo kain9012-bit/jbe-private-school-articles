@@ -29,7 +29,7 @@ export type Corp = {
   change: '동일' | '형식만 변경' | '개정' | '대조 불가' | null;
   changedArticles: string[];
   notes: string;
-  /** 학교별 학생 수 (교육행정자료 2026) */
+  /** 학교별 학생 수 (교육행정자료 2026.4.1. 기준) */
   students: { school: string; matched: string; students: number }[];
   findings: Finding[];
 };
