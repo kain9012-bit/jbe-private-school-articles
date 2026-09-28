@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
-import { AlertTriangle, ArrowUp, Building2, FilePen, Search, X } from 'lucide-react';
+import { AlertTriangle, ArrowUp, Building2, Download, FilePen, Search, X } from 'lucide-react';
+import { downloadAll } from './lib/excel';
 import { Header } from './components/Header';
 import { CorpCard, countBy } from './components/CorpCard';
 import { ItemTab } from './components/ItemTab';
@@ -19,7 +20,7 @@ export default function App() {
   const [group, setGroup] = useState('');
   const [item, setItem] = useState('');
   const [changedOnly, setChangedOnly] = useState(false);
-  const [sort, setSort] = useState<Sort>('severity');
+  const [sort, setSort] = useState<Sort>('name');
   const [q, setQ] = useState('');
   const [top, setTop] = useState(false);
 
@@ -153,8 +154,8 @@ export default function App() {
                 aria-label="정렬"
                 className="rounded-lg border border-slate-300 px-2.5 py-1.5 text-sm text-slate-700 bg-white hover:border-blue-600"
               >
-                <option value="severity">저촉 많은 순</option>
                 <option value="name">법인명 가나다순</option>
+                <option value="severity">저촉 많은 순</option>
               </select>
               <span className="flex-1" />
               <label className="flex items-center gap-1.5 flex-1 min-w-[12rem] max-w-sm rounded-lg border border-slate-300 px-2.5 py-1.5 bg-white focus-within:border-blue-600">
@@ -170,10 +171,18 @@ export default function App() {
               </label>
             </div>
 
-            <div className="mt-6">
+            <div className="mt-6 flex flex-wrap items-end justify-between gap-2">
               <SectionTitle count={shown.length} desc="카드를 누르면 지적 내용과 원문이 펼쳐짐">
                 법인
               </SectionTitle>
+              <button
+                type="button"
+                onClick={() => downloadAll(CORPS, DATA.year)}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-sm font-bold text-white"
+              >
+                <Download className="w-4 h-4" aria-hidden="true" />
+                전체 엑셀 내려받기
+              </button>
             </div>
             {shown.length === 0 ? (
               <div className="mt-4">
@@ -182,7 +191,7 @@ export default function App() {
             ) : (
               <div className="mt-2.5 space-y-2.5">
                 {shown.map((x) => (
-                  <CorpCard key={`${x.corp.no}|${level}|${group}|${item}`} corp={x.corp} findings={x.findings} open={shown.length <= 3} />
+                  <CorpCard key={`${x.corp.no}|${level}|${group}|${item}`} corp={x.corp} findings={x.findings} year={DATA.year} open={shown.length <= 3} />
                 ))}
               </div>
             )}

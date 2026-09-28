@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { ChevronDown, FileText, Scale, ShieldCheck } from 'lucide-react';
+import { ChevronDown, Download, FileText, Scale, ShieldCheck } from 'lucide-react';
+import { downloadCorp } from '../lib/excel';
 import { Badge } from './Ui';
 import { ITEM_LABEL, LEVELS, LEVEL_TONE, type Corp, type Finding, type Level } from '../types';
 
@@ -62,9 +63,10 @@ const Row: React.FC<{ f: Finding }> = ({ f }) => (
   </div>
 );
 
-export const CorpCard: React.FC<{ corp: Corp; findings: Finding[]; open?: boolean }> = ({
+export const CorpCard: React.FC<{ corp: Corp; findings: Finding[]; year: string; open?: boolean }> = ({
   corp,
   findings,
+  year,
   open: initial = false,
 }) => {
   const [open, setOpen] = useState(initial);
@@ -106,6 +108,16 @@ export const CorpCard: React.FC<{ corp: Corp; findings: Finding[]; open?: boolea
             <div><dt className="inline text-slate-500">학교장 임기 </dt><dd className="inline font-bold">{b.principal_term ?? '—'}</dd></div>
             <div className="sm:col-span-2 lg:col-span-4"><dt className="inline text-slate-500">학생 수(2026.4.1.) </dt><dd className="inline font-bold">{corp.students.length ? corp.students.map((x) => `${x.matched} ${x.students.toLocaleString('ko-KR')}명`).join(' · ') : '—'}</dd><span className="text-slate-500"> · 징계위원 {b.discipline_committee ?? '—'}</span></div>
           </dl>
+          <div className="px-4 py-2 border-t border-slate-100 flex justify-end">
+            <button
+              type="button"
+              onClick={() => downloadCorp(corp, year)}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-300 text-sm font-bold text-slate-700 hover:border-blue-600 hover:text-blue-700"
+            >
+              <Download className="w-4 h-4" aria-hidden="true" />
+              이 법인 엑셀 내려받기 ({corp.findings.length}건)
+            </button>
+          </div>
           {findings.length === 0 ? (
             <p className="px-4 py-6 text-sm text-slate-500">조건에 맞는 지적 없음</p>
           ) : (
